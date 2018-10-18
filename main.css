@@ -1,0 +1,165 @@
+* { margin: 0; padding: 0; }
+* { box-sizing: border-box; }
+*::after,::before { box-sizing: border-box; }
+ul,li { list-style: none; }
+a { color: inherit; text-decoration: none; }
+body { font-size: 14px; line-height: 1.5; }
+
+/* layout */
+
+header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 64px;
+    background: #FCFCFC;
+    border-bottom: 1px solid #ddd; 
+}
+
+main {
+    background: #FAFAFA;
+}
+
+footer {
+    padding: 5vh 0;
+    text-align: center;
+    background: #F2F2F2;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myName {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.resumeLink {
+    color: #999;
+    margin: 0 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent; 
+}
+.resumeLink:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+/* main */
+
+main {
+    padding: 10vh 2rem;
+
+}
+.downloadGroup {
+    margin-top: 4vh;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download {
+    margin: 0 15px;
+    color: #333;
+    line-height: 1rem;
+    border-bottom: .5px solid #333;
+}
+
+.resume {
+    background: #fff;
+    max-width: 1000px;
+    padding: 5em 3em;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.resume > .infomation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infomation .name {
+    margin-right: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.infomation .title {
+    font-size: 1.2rem; 
+    font-weight: 500;
+    color: #333;
+}
+
+.infomation ul {
+    color: #999;
+}
+
+.infomation ul > li{
+    padding: 5px 0;
+}
+
+.resume .hr {
+    width: 100%;
+    margin: 20px 0 30px;
+    border-top: 1px solid #eee;
+}
+
+.resume .module {
+    margin: 1.5rem 0;
+    display: flex;
+    line-height: 1.5rem;
+}
+
+.module .title {
+    padding: 0 2rem;
+    font-size: 1.2rem; 
+    font-weight: 500;
+    color: #333;
+}
+
+.module .wrapper {
+    color: #666;
+}
+
+.showLink {
+    margin: 0 5px;
+    color: #999;
+    border-bottom: 1px solid transparent;
+}
+
+.showLink:hover {
+    color: #666;
+    border-bottom: 1px solid #333;
+}
+
+.module .content {
+    margin: 0 2rem;
+}
+
+.module .items {
+    margin-bottom: 1.5rem;
+}
+
+.module .itemsHeader {
+    display: flex;
+}
+
+.module .itemName {
+    font-size: 1.5rem;
+    color: #666;
+    flex-grow: 2;
+}
+
+.module .introduce {
+    color: #666;
+}
+
