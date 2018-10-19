@@ -5,12 +5,53 @@ ul,li { list-style: none; }
 a { color: inherit; text-decoration: none; }
 body { font-size: 14px; line-height: 1.5; }
 
+/* @media print */
+
+@media print {
+
+    .footer,
+    .header {
+        display: none;
+    }
+
+    main {
+        padding: 0
+    }
+
+    .downloadGroup {
+        display: none
+    }
+
+    main .resume {
+        padding: 0;
+        max-width: none
+    }
+
+    main .module {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        line-height: 2rem
+    }
+
+    main .module>.content {
+        font-weight: 400
+    }
+
+    main .module ul {
+        margin: 5px 0
+    }
+}
+
+@page {
+    size: "A4";
+    margin: 0;
+}
+
 /* layout */
 
 header {
     padding-left: 10vw;
     padding-right: 10vw;
-    height: 64px;
     background: #FCFCFC;
     border-bottom: 1px solid #ddd; 
 }
@@ -40,6 +81,8 @@ header {
     color: #333;
     font-size: 1.5rem;
     font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .resumeLink {
@@ -82,7 +125,7 @@ main {
     border-radius: 5px;
 }
 
-.resume > .infomation {
+.resume> .infomation {
     display: flex;
     justify-content: space-between;
 }
@@ -99,6 +142,10 @@ main {
     color: #333;
 }
 
+.me ul {
+    padding-left: 20px;
+}
+
 .infomation ul {
     color: #999;
 }
@@ -109,18 +156,18 @@ main {
 
 .resume .hr {
     width: 100%;
-    margin: 20px 0 30px;
+    margin: 20px 0;
     border-top: 1px solid #eee;
 }
 
 .resume .module {
-    margin: 1.5rem 0;
+    margin-top: 2rem;
     display: flex;
     line-height: 1.5rem;
 }
 
 .module .title {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
     font-size: 1.2rem; 
     font-weight: 500;
     color: #333;
@@ -133,16 +180,14 @@ main {
 .showLink {
     margin: 0 5px;
     color: #999;
-    border-bottom: 1px solid transparent;
 }
 
 .showLink:hover {
     color: #666;
-    border-bottom: 1px solid #333;
 }
 
 .module .content {
-    margin: 0 2rem;
+    margin: 0 2.5rem;
 }
 
 .module .items {
@@ -157,6 +202,7 @@ main {
     font-size: 1.5rem;
     color: #666;
     flex-grow: 2;
+    padding-bottom: 20px;
 }
 
 .module .introduce {
