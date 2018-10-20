@@ -9,7 +9,7 @@ body { font-size: 14px; line-height: 1.5; }
 
 @media print {
 
-    .footer,
+    footer,
     .header {
         display: none;
     }
@@ -18,7 +18,7 @@ body { font-size: 14px; line-height: 1.5; }
         padding: 0
     }
 
-    .downloadGroup {
+    main .downloadGroup {
         display: none
     }
 
@@ -44,7 +44,6 @@ body { font-size: 14px; line-height: 1.5; }
 
 @page {
     size: "A4";
-    margin: 0;
 }
 
 /* layout */
@@ -69,8 +68,7 @@ footer {
 /* header */
 
 header {
-    width: 100%;
-    z-index: 999;
+    width: 100vw;
     position: fixed;
     display: flex;
     align-items: center;
