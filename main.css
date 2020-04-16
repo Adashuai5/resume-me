@@ -1,209 +1,213 @@
-* { margin: 0; padding: 0; }
-* { box-sizing: border-box; }
-*::after,::before { box-sizing: border-box; }
-ul,li { list-style: none; }
-a { color: inherit; text-decoration: none; }
-body { font-size: 14px; line-height: 1.5; }
-
-/* @media print */
-
-@media print {
-
-    footer,
-    .header {
-        display: none;
-    }
-
-    main {
-        padding: 0
-    }
-
-    main .downloadGroup {
-        display: none
-    }
-
-    main .resume {
-        padding: 0;
-        max-width: none
-    }
-
-    main .module {
-        font-size: 1.1rem;
-        margin-top: 10px;
-        line-height: 2rem
-    }
-
-    main .module>.content {
-        font-weight: 400
-    }
-
-    main .module ul {
-        margin: 5px 0
-    }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pingfang SC, Microsoft Yahei, Lato, Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
 }
-
-@page {
-    size: "A4";
+* {
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 /* layout */
 
-header {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background: #FCFCFC;
-    border-bottom: 1px solid #ddd; 
-}
-
-main {
-    background: #FAFAFA;
-}
-
 footer {
-    padding: 5vh 0;
-    text-align: center;
-    background: #F2F2F2;
+  padding: 5vh 0;
+  text-align: center;
+  background: #f2f2f2;
+  font-size: 1.1rem;
 }
 
-/* header */
-
 header {
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10vw;
+  border-bottom: 1px solid #ddd;
+  background: hsla(0, 0%, 99%, 0.95);
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume {
+  padding: 10vh 2rem;
+  padding-top: calc(30px + 10vh);
+  background: #fafafa;
 }
 
 .myName {
-    color: #333;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .resumeLink {
-    color: #999;
-    margin: 0 15px;
-    padding: 5px 0;
-    border-bottom: 1px solid transparent; 
-}
-.resumeLink:hover {
-    color: #333;
-    border-bottom: 1px solid #333;
+  color: #999;
+  font-size: 1.1rem;
+  display: none;
 }
 
 /* main */
 
-main {
-    padding: 10vh 2rem;
-
-}
-.downloadGroup {
-    margin-top: 4vh;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.download {
-    margin: 0 15px;
-    color: #333;
-    line-height: 1rem;
-    border-bottom: .5px solid #333;
-}
-
 .resume {
-    background: #fff;
-    max-width: 1000px;
-    padding: 5em 3em;
-    margin: 0 auto;
-    border-radius: 5px;
+  padding: 10vh 2rem;
+  padding-top: calc(30px + 10vh);
+  background: #fafafa;
 }
 
-.resume> .infomation {
-    display: flex;
-    justify-content: space-between;
+.resume a {
+  color: #666;
+  text-decoration-color: #666;
 }
 
-.infomation .name {
-    margin-right: 2rem;
-    font-size: 3rem;
-    font-weight: 500;
+.resume .downloadGroup {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
-.infomation .title {
-    font-size: 1.2rem; 
-    font-weight: 500;
-    color: #333;
+.resume .downloadGroup .download {
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+.resume .downloadGroup .download:hover {
+  color: #000;
+  border-color: #000;
+}
+.resume .ml-10 {
+  margin-left: 10px;
+}
+.resume .ml-20 {
+  margin-left: 20px;
 }
 
-.me ul {
-    padding-left: 20px;
+.resume .wrapper {
+  background: #fff;
+  max-width: 1000px;
+  padding: 5rem 3rem;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
-.infomation ul {
-    color: #999;
+.resume .information {
+  display: flex;
+  justify-content: space-between;
+}
+.information .name {
+  font-size: 3.5rem;
+  font-weight: 500;
 }
 
-.infomation ul > li{
-    padding: 5px 0;
+.information .title {
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.information .info {
+  text-align: right;
+}
+
+.information .me {
+  text-align: left;
+}
+.information p {
+  font-size: 1rem;
+  color: #999;
 }
 
 .resume .hr {
-    width: 100%;
-    margin: 20px 0;
-    border-top: 1px solid #eee;
+  width: 100%;
+  border-top: 1px solid #eee;
+  margin: 20px 0 30px;
+}
+
+.resume .showLink:hover {
+  border-color: black;
+  color: black;
 }
 
 .resume .module {
-    margin-top: 2rem;
-    display: flex;
-    line-height: 1.5rem;
+  display: flex;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  line-height: 2.5rem;
+}
+.resume .module > .title {
+  width: 150px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  text-align: center;
+  font-weight: 500;
 }
 
-.module .title {
-    padding: 0 2.5rem;
-    font-size: 1.2rem; 
-    font-weight: 500;
-    color: #333;
+.resume .module > .content {
+  color: #666;
+  padding: 0 3rem;
+  flex-grow: 1;
 }
 
-.module .wrapper {
-    color: #666;
+.resume .module > .content .right {
+  float: right;
+}
+.resume .module > .content .title {
+  font-weight: 400;
 }
 
-.showLink {
-    margin: 0 5px;
-    color: #999;
+/* @media print */
+
+@media print {
+  footer,
+  header {
+    display: none;
+  }
+
+  .resume {
+    padding: 0;
+  }
+
+  .resume .downloadGroup {
+    display: none;
+  }
+
+  .resume .wrapper {
+    padding: 0;
+    max-width: none;
+  }
+
+  .resume .module {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 2rem;
+  }
+  .resume .module > .title {
+    width: 60px;
+  }
+  .resume .module > .content {
+    font-weight: 400;
+  }
+
+  .resume .module ul {
+    margin: 5px 0;
+  }
+  .resume .resumeLink {
+    left: 10px;
+    top: 10px;
+    display: block;
+  }
 }
 
-.showLink:hover {
-    color: #666;
+@page {
+  size: "A4";
 }
-
-.module .content {
-    margin: 0 2.5rem;
-}
-
-.module .items {
-    margin-bottom: 1.5rem;
-}
-
-.module .itemsHeader {
-    display: flex;
-}
-
-.module .itemName {
-    font-size: 1.5rem;
-    color: #666;
-    flex-grow: 2;
-    padding-bottom: 20px;
-}
-
-.module .introduce {
-    color: #666;
-}
-
