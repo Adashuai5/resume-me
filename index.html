@@ -47,9 +47,8 @@
                 <div class="title">社区相关</div>
                 <div class="content">
                     <div class="item">
-                        <a href="https://adashuai5.github.io/" class="showLink">技术博客</a>
+                        <a href="https://www.zhihu.com/people/zhouyuanda/posts/" class="showLink">技术博客</a>
                         <a href="https://github.com/Adashuai5/" class="showLink ml-10">Github</a>
-                        <a href="https://www.zhihu.com/people/zhouyuanda/activities/" class="showLink ml-10">知乎主页</a>
                     </div>
                 </div>
             </div>
@@ -57,14 +56,62 @@
                 <div class="title">技能描述</div>
                 <div class="content">
                     <div class="item">
-                        <div>熟悉原生 JavaScript，尝试手写过 <b>Promise(A+)、深拷贝</b>等，熟悉 <b>ES6</b> 常用规范，了解 <b>TypeScript。</b>
-                        </div>
+                        <div>熟悉原生 JavaScript，尝试手写过 <b>Promise(A+)、深拷贝</b>等，熟悉 <b>ES6</b> 常用规范。</div>
                         <div>熟练使用 <b>Vue 全家桶</b>及 <b>Element UI</b>，深入 Vue 及其周边<b>原理</b>。</div>
+                        <div>熟悉 React，熟练使用 <b>React Hooks</b>，熟练使用 <b>TypeScript。</b></div>
                         <div>熟练使用 <b>Git</b> 进行版本控制，熟练使用<b>单元测试，集成测试</b>等优化项目流程。</div>
                         <div>熟悉 <b>HTML5 & CSS3</b> ，掌握 HTML5 <b>Canvas</b> ，CSS3 动画、过渡效果、响应式等常用技术。</div>
                         <div>熟悉<b>模块化、工程化开发</b>流程，能够配置 Webpack。</div>
                         <div>了解 <b>Node.js</b>，用其写过实用的小工具。</div>
                         <div>了解<b>移动端页面</b>开发，会使用 REM、vw/ vh 等技术制作适配手机设备的页面。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="title">开源项目</div>
+                <div class="content">
+                    <div class="items">
+                        <div class="title">wheels-ada UI
+                            <div class="right">
+                                <a href="https://adashuai5.github.io/wheels-ada/"
+                                    class="showLink">https://adashuai5.github.io/wheels-ada/</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>该项目是参照 Element UI、Ant Design、iView 等 UI 库思路的一个基于 Vue 的 <b>UI 组件库</b>。
+                            <li>目前已支持按钮（点击<b>涟漪效果</b>）、Tabs 标签页、Popover 弹出框、Collapse 折叠面板等组件。</li>
+                            <li>每个组件均经历从<b>需求分析</b>到<b>单元测试</b>，并用 <b>TravisCI 实现持续集成</b>。</li>
+                            <li>最终以 VuePress 为基础<b>制作官方文档</b>，发布于 npmjs.org。</li>
+                            <li>完成该项目使我对 Vue <b>组件化</b>等常用特征更加熟悉</li>
+                            <li>同时提升了自己对<b>前端工程化流程</b>以及<b>单元测试</b>重要性的深刻理解</b>，近一步开源文化。</li>
+                        </ul>
+                        <p>技术栈 Vue + VuePress + ES6 + Parcel + Npm Scripts + Mocha + Chai + SCSS</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">my-desktop
+                            <div class="right">
+                                <a href="https://adashuai5.github.io/my-desktop/"
+                                    class="showLink">https://adashuai5.github.io/my-desktop/</a>
+                            </div>
+                        </div>
+                        <p>
+                            这是我自主开发的一个使用 <b>React Hooks</b> 和 <b>TypeScript</b> 搭建的仿 MacOS 系统桌面项目。
+                            项目实现了 Mac 桌面部分动效，添加了包括简单设置，基础<b>计算器</b>，基础<b>画板</b>等实用功能工具，里面的每一个都是一个独立小项目。
+                            同时这是我学习 Hooks 和 TypeScript 的第一个完整项目，我对其作了总结输出相关项目<b>系列博客</b>。
+                        </p>
+                    </div>
+                    <div class="items">
+                        <div class="title">daily-tasks
+                            <div class="right">
+                                <a href="https://github.com/Adashuai5/daily-tasks/"
+                                    class="showLink">https://github.com/Adashuai5/daily-tasks/</a>
+                            </div>
+                        </div>
+                        <p>
+                            一个基于 Node.js 的<b>命令行</b> todo 小工具。主要使用了 Node API 的<b>文件模块</b>，使用 tj 提供的 commander.js 开发命令，
+                            用 Inquirer.js 作<b>交互式命令行用户界面</b>，最后引入 jest ，配合 Manual Mocks
+                            <b>模拟 fs 读写</b>，完成功能测试。你可以直接 npm/ yarn 下载 daily-tasks 体验。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -126,55 +173,6 @@
                             <li>配合后端使用 WebSocket 作为数据实时传输的方案，利用 vuex 将平台导入导出功能<b>抽离成通用模块</b>，并优化交互，提升体验，而后沿用至其他平台。</li>
                             <li><b>优化</b>原有的高级搜索<b>逻辑</b>，<b>封装</b>了批量选择、图片资料上传等<b>组件</b>，提供团队使用，<b>提升了开发效率</b></li>
                         </ul>
-                        <p>技术栈与上一项目基本一致；其他几个平台与该项目类似，差别主要在业务范围等，不作展开。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <div class="title">开源项目</div>
-                <div class="content">
-                    <div class="items">
-                        <div class="title">wheels-ada UI
-                            <div class="right">
-                                <a href="https://adashuai5.github.io/wheels-ada/"
-                                    class="showLink">https://adashuai5.github.io/wheels-ada/</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>该项目是参照 Element UI、Ant Design、iView 等 UI 库思路的一个基于 Vue 的 <b>UI 组件库</b>。
-                            <li>目前已支持按钮（点击<b>涟漪效果</b>）、Tabs 标签页、Popover 弹出框、Collapse 折叠面板等组件。</li>
-                            <li>每个组件均经历从<b>需求分析</b>到<b>单元测试</b>，并用 <b>TravisCI 实现持续集成</b>。</li>
-                            <li>最终以 VuePress 为基础<b>制作官方文档</b>，发布于 npmjs.org。</li>
-                            <li>完成该项目使我对 Vue <b>组件化</b>等常用特征更加熟悉</li>
-                            <li>同时提升了自己对<b>前端工程化流程</b>以及<b>单元测试</b>重要性的深刻理解</b>，近一步开源文化。</li>
-                        </ul>
-                        <p>技术栈 Vue + VuePress + ES6 + Parcel + Npm Scripts + Mocha + Chai + SCSS</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">daily-tasks
-                            <div class="right">
-                                <a href="https://github.com/Adashuai5/daily-tasks/"
-                                    class="showLink">https://github.com/Adashuai5/daily-tasks/</a>
-                            </div>
-                        </div>
-                        <p>
-                            一个基于 Node.js 的<b>命令行</b> todo 小工具。主要使用了 Node API 的<b>文件模块</b>，使用 tj 提供的 commander.js 开发命令，
-                            用 Inquirer.js 作<b>交互式命令行用户界面</b>，最后引入 jest ，配合 Manual Mocks
-                            <b>模拟 fs 读写</b>，完成功能测试。你可以直接 npm/ yarn 下载 daily-tasks 体验。
-                        </p>
-                    </div>
-                    <div class="items">
-                        <div class="title">simple-drawing
-                            <div class="right">
-                                <a href="https://adashuai5.github.io/simple-drawing/"
-                                    class="showLink">https://adashuai5.github.io/simple-drawing/</a>
-                            </div>
-                        </div>
-                        <p>
-                            一款使用<b>纯原生 JS</b>，及 HTML 5 的 <b>Canvas 元素</b>等开发的画图工具。
-                            支持在 <b>PC 及移动端</b>在线作画，提供了画笔粗细、颜色调整，提供<b>撤退、前进</b>，画作删除等功能，并支持画作下载。
-                            与此同时，使用 electron 生成了<b>客户端版本</b>，便于桌面随时使用。
-                        </p>
                     </div>
                 </div>
             </div>
