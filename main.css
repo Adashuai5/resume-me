@@ -48,12 +48,6 @@ header {
   justify-content: space-between;
 }
 
-.resume {
-  padding: 10vh 2rem;
-  padding-top: calc(30px + 10vh);
-  background: #fafafa;
-}
-
 .myName {
   color: #333;
   text-decoration: none;
@@ -188,7 +182,7 @@ header {
 
 /* @media print */
 
-@media print {
+@media print, (max-width: 500px) {
   footer,
   header,
   .resume .downloadGroup {
@@ -210,11 +204,8 @@ header {
 
   .resume .module > .title {
     width: 5rem;
+    text-align: left;
   }
-
-  /* .resume .module > .content {
-    font-weight: 400;
-  } */
 
   .resume .module ul {
     margin: 0;
@@ -230,4 +221,27 @@ header {
 
 @page {
   size: 'A4';
+}
+
+@media (max-width: 500px) {
+  .resume .resumeLink {
+    display: none;
+  }
+
+  .resume .module {
+    display: block;
+  }
+
+  .resume .wrapper {
+    padding: 12px;
+    max-width: none;
+  }
+
+  .resume .module > .content {
+    padding: 0;
+  }
+
+  .resume .module > .content .right {
+    float: none;
+  }
 }
